@@ -96,6 +96,24 @@ Entraînement GPU cloud dockerisé et reproductible.
 
 ---
 
+## 🎬 Creative & Automation
+
+### Generative Video Studio — pipeline vidéo automatisé
+
+**Agent d'orchestration** qui pilote l'**API Seedance** : génération automatique
+de plusieurs **branches / variantes par scène** (multi-seed, retry & suivi de
+coût), assemblage du **montage Remotion** synchronisé, post-traitement
+(upscale) et export multi-format. Couplé à une **création visuelle / direction
+artistique** maison.
+
+![Generative Video Studio dashboard](images/video_studio.png)
+
+> **Stack ·** `Python` · `API Seedance (I2V / T2V)` · `agent d'orchestration` · `Remotion` · `TypeScript` · `FFmpeg` · `upscaling`
+>
+> **Création ·** `Photoshop` · `design / direction artistique` · `création web (HTML / CSS / JS)`
+
+---
+
 ### 🧠 Domaines de compétence
 
 `LLM fine-tuning` · `Speech AI (STT / TTS / voice cloning)` · `On-device & mobile AI`
