@@ -1,0 +1,6 @@
+*.pdf
+cv.html
+.env
+*.key
+*token*
+*secret*
