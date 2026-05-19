@@ -7,6 +7,20 @@
 
 ---
 
+### 🧰 Stack globale
+
+| Catégorie | Technologies |
+|---|---|
+| **Langages** | Python · TypeScript · JavaScript · MQL4 |
+| **ML / DL** | PyTorch · Transformers · Reinforcement Learning (TFT, Dreamer) · STT / TTS / voice cloning · NMT |
+| **Mobile** | React Native · Expo · iOS on-device (ANE / CoreML / MLKit) |
+| **LLM / Agents** | Anthropic API · OpenAI API · orchestration multi-agents |
+| **Infra** | Vast.ai GPU (RTX 5090 / H100 / RTX PRO 6000) · Docker · CUDA · FastAPI · GitHub Actions (CI iOS) · cloudflared |
+
+> Chaque projet ci-dessous indique **sa propre stack** — les choix techniques diffèrent selon les contraintes (embarqué, temps réel, entraînement GPU…).
+
+---
+
 ### 🚀 Just One Tap — App de traduction vocale (iOS · live App Store)
 
 Pipeline IA **embarqué** : reconnaissance vocale → traduction → synthèse vocale.
@@ -17,6 +31,8 @@ Pipeline IA **embarqué** : reconnaissance vocale → traduction → synthèse v
 |:-:|:-:|:-:|:-:|:-:|
 | ![Voice](images/justonetap_1_voice.jpg) | ![Conversation](images/justonetap_2_conversation.jpg) | ![Camera](images/justonetap_3_camera.jpg) | ![Text](images/justonetap_4_text.jpg) | ![Why](images/justonetap_5_why.jpg) |
 
+> **Stack ·** `TypeScript` · `React Native` · `Expo` · `iOS Speech (STT on-device)` · `MLKit Translate (ANE)` · `Apple TTS` · `OCR caméra` · `GitHub Actions (CI iOS)` · `EAS OTA`
+
 ---
 
 ### 🤖 FRAPZ — Système multi-agents IA
@@ -26,6 +42,8 @@ workflow en 3 phases (Discovery → Activation → Production), avec portes de
 décision Go/No-Go, suivi tokens/coût et synthèse agrégée.
 
 ![FRAPZ multi-agent console](images/frapz_console.png)
+
+> **Stack ·** `JavaScript` · `Alpine.js` · `Tailwind CSS` · `Anthropic API` · `OpenAI API` · `orchestration multi-agents` · `Telegram Bot API`
 
 ---
 
@@ -38,31 +56,35 @@ Entraînement GPU cloud dockerisé et reproductible.
 
 ![RL Trading Engine architecture](images/rl_trading_engine.png)
 
+> **Stack ·** `Python` · `PyTorch` · `Temporal Fusion Transformer` · `Dreamer (world-model RL)` · `algorithmes évolutionnaires` · `CUDA` · `Docker` · `Vast.ai 4× RTX PRO 6000` · `pont live MQL4`
+
 ---
 
-### 🧠 Domaines
+### 🗣️ Moteur voix multilingue
+
+TTS / clonage vocal **23 langues**, streaming temps réel, VAD robuste au bruit
+ambiant, endpoint de synthèse à faible latence.
+
+> **Stack ·** `Python` · `PyTorch` · `FastAPI` · `faster-whisper (STT)` · `Chatterbox Multilingual / Piper (TTS)` · `m2m100 (NMT)` · `streaming + VAD` · `cloudflared`
+
+---
+
+### 🎚️ Fine-tune TTS français
+
+Fine-tuning d'un modèle TTS sur dataset **~100h** : préparation données,
+phonémisation, entraînement LoRA multi-GPU cloud, pipeline reproductible.
+
+> **Stack ·** `Python` · `PyTorch` · `Kokoro-82M / StyleTTS2` · `LoRA` · `espeak-ng (phonémisation)` · `Vast.ai multi-GPU (RTX 5090 / H100)` · `DDP`
+
+---
+
+### 🧠 Domaines de compétence
 
 `LLM fine-tuning` · `Speech AI (STT / TTS / voice cloning)` · `On-device & mobile AI`
 `Model quantization & optimization` · `Neural Machine Translation` · `Multi-agent systems`
-`GPU cloud training`
+`Reinforcement Learning` · `GPU cloud training`
 
-### 🛠️ Stack
-
-**Langages** Python · TypeScript · MQL4
-**ML** PyTorch · Transformers · faster-whisper · XTTS / StyleTTS2 / Kokoro · Chatterbox
-**Mobile** React Native · Expo · iOS on-device (ANE / CoreML / MLKit)
-**Infra** Vast.ai (RTX 5090 / H100) · DDP · FastAPI · GitHub Actions (CI iOS) · OTA
-
----
-
-### 📦 Autres projets
-
-| Projet | Description | État |
-|---|---|---|
-| **Moteur voix multilingue** | TTS / clonage vocal 23 langues, streaming temps réel, VAD robuste au bruit. | R&D |
-| **Fine-tune TTS FR** | Dataset ~100h, LoRA, entraînement multi-GPU cloud, pipeline reproductible. | R&D |
-
-<sub>🎬 Loisir : clip musical animé généré par IA (modèles de diffusion + Remotion).</sub>
+<sub>🎬 Loisir : clip musical animé généré par IA — <code>modèles de diffusion</code> · <code>Remotion</code>.</sub>
 
 ---
 
