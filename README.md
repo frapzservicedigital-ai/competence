@@ -11,10 +11,6 @@
 > m'approprie une techno nouvelle en quelques jours et je la transforme en
 > produit qui tourne. **Autonome du prototype au *ship***, sans attendre
 > qu'on me montre.
->
-> Ce que je vends : un profil qui **livre vraiment** — pas des slides, des
-> apps en production (App Store), des modèles entraînés, des pipelines
-> déployés.
 
 **Faits marquants**
 
