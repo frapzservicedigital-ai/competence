@@ -78,6 +78,18 @@ phonémisation, entraînement LoRA multi-GPU cloud, pipeline reproductible.
 
 ---
 
+### 🔎 RAG bancaire sécurisé — assistant conformité
+
+RAG sur documents de conformité (**AML / RGPD / guide interne**) : recherche
+vectorielle, génération **encadrée par garde-fous d'entrée/sortie**
+(anti-injection, blocklist, contrôle de la réponse), citations des sources, API.
+
+![Banking RAG dashboard](images/rag_dashboard.png)
+
+> **Stack ·** `Python` · `FastAPI` · `LlamaIndex` · `ChromaDB` · `embeddings MiniLM` · `Claude (Anthropic)` · `guardrails I/O` · `Docker` · `GitHub Actions (CI)` · `pytest`
+
+---
+
 ### 🧠 Domaines de compétence
 
 `LLM fine-tuning` · `Speech AI (STT / TTS / voice cloning)` · `On-device & mobile AI`
