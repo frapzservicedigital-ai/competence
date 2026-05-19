@@ -21,6 +21,16 @@ Pipeline IA **embarqué** : reconnaissance vocale → traduction → synthèse v
 
 ---
 
+### 🤖 FRAPZ — Système multi-agents IA
+
+Console d'orchestration **multi-agents** : 9 agents spécialisés répartis sur un
+workflow en 3 phases (Discovery → Activation → Production), avec portes de
+décision Go/No-Go, suivi tokens/coût et synthèse agrégée.
+
+![FRAPZ multi-agent console](images/frapz_console.png)
+
+---
+
 ### 🧠 Domaines
 
 `LLM fine-tuning` · `Speech AI (STT / TTS / voice cloning)` · `On-device & mobile AI`
@@ -42,7 +52,6 @@ Pipeline IA **embarqué** : reconnaissance vocale → traduction → synthèse v
 |---|---|---|
 | **Moteur voix multilingue** | TTS / clonage vocal 23 langues, streaming temps réel, VAD robuste au bruit. | R&D |
 | **Fine-tune TTS FR** | Dataset ~100h, LoRA, entraînement multi-GPU cloud, pipeline reproductible. | R&D |
-| **FRAPZ** | Système multi-agents IA (8 agents + orchestrateur) pour analyse/décision produit. | Conception |
 | **Indicateurs trading** | Logique algorithmique MetaTrader 4 (patterns, FVG, stop dynamique). | Perso |
 
 <sub>🎬 Loisir : clip musical animé généré par IA (modèles de diffusion + Remotion).</sub>
