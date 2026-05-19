@@ -13,11 +13,13 @@ Pipeline IA **embarqué** : reconnaissance vocale → traduction → synthèse v
 24 langues, exécution **100 % on-device** (zéro surchauffe), 4 modes
 (Solo / Duo / Caméra / Texte).
 
-| | | | |
-|---|---|---|---|
-| ![Voice](images/justonetap_1_voice.jpg) | ![Conversation](images/justonetap_2_conversation.jpg) | ![Camera](images/justonetap_3_camera.jpg) | ![Text](images/justonetap_4_text.jpg) |
-
-![Why](images/justonetap_5_why.jpg)
+<p align="center">
+  <img src="images/justonetap_1_voice.jpg" width="170" />
+  <img src="images/justonetap_2_conversation.jpg" width="170" />
+  <img src="images/justonetap_3_camera.jpg" width="170" />
+  <img src="images/justonetap_4_text.jpg" width="170" />
+  <img src="images/justonetap_5_why.jpg" width="170" />
+</p>
 
 ---
 
